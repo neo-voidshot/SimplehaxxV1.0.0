@@ -120,3 +120,17 @@ end
 task.spawn(SCRIPT_7)
 
 return UI["1"], require;
+
+local Frame1 = _G.Main:New("Test")
+
+Frame1:Button("Text Button 1",function()
+	print("Hello")
+end)
+
+Frame1:Button("Text Button 2",function()
+	print("Hello 2")
+end)
+
+--End
+
+return _G.Main
